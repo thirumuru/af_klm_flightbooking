@@ -1,0 +1,35 @@
+<h2>Available Flights (Search Result)</h2>
+<!-- <div *ngIf="flights && flights.length > 0; else noData">
+  <app-flight-card
+  *ngFor="let flight of flights"
+  [flight]="flight"
+  (bookFlight)="book($event)">
+</app-flight-card>
+</div> -->
+
+<!-- <ng-template #noData>
+  No Flights Available
+</ng-template> -->
+
+
+
+<div class="results-container">
+
+  <app-filter-sidebar
+    [availableAirlines]="airlines"
+    (filtersChanged)="applyFilters($event)">
+  </app-filter-sidebar>
+
+  <div class="flight-list" *ngIf="filteredFlights && filteredFlights.length > 0; else noData">
+    <app-flight-card
+      *ngFor="let flight of filteredFlights"
+      [flight]="flight"
+      (bookFlight)="book($event)">
+    </app-flight-card>
+  </div>
+
+  <ng-template #noData>
+    No Flights Available
+  </ng-template>
+  
+</div>

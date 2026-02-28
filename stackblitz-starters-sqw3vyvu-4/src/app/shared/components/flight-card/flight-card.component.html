@@ -1,0 +1,10 @@
+
+
+<div class="card">
+  <h3>{{ flight.airline }} ({{ flight.flightNumber }})</h3>
+  <p>Departure: {{ flight.departureTime }}</p>
+  <p>Duration: {{ flight.duration }} mins</p>
+  <p>Price: ₹{{ flight.price }}</p>
+
+  <button style="background-color:skyblue;color:black" (click)="bookFlight.emit(flight)">Book</button>
+</div>

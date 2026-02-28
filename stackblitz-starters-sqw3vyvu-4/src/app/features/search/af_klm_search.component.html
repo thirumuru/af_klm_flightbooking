@@ -1,0 +1,18 @@
+<div class="search-container">
+  <h2>Flight Search</h2>
+
+  <form [formGroup]="form" (ngSubmit)="search()">
+    <input placeholder="Source" formControlName="source" />
+    <input placeholder="Destination" formControlName="destination" />
+    <input type="date" formControlName="departureDate" />
+
+    <!-- BLUE SEARCH BUTTON -->
+    <button
+      type="submit"
+      class="search-btn"
+      [disabled]="form.invalid">
+      Search
+    </button>
+    <!-- <button type="submit">Search</button> -->
+  </form>
+</div>

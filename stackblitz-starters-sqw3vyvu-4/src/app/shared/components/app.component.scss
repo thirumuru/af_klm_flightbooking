@@ -1,0 +1,40 @@
+/* ===============================
+   Header Container
+================================= */
+.app-header {
+  background: linear-gradient(
+    135deg,
+    #00205b,
+    /* Deep KLM Blue */ #005bbb,
+    /* Medium Blue */ #d90429 /* Air France Red Accent */
+  );
+  padding: 25px 0;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===============================
+   Title Styling
+================================= */
+.app-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+
+  /* Subtle glow effect */
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ===============================
+   Responsive Design
+================================= */
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 22px;
+    padding: 0 15px;
+  }
+}

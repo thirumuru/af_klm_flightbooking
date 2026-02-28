@@ -1,0 +1,75 @@
+<div class="booking-container">
+
+  <h2>Booking Flight</h2>
+
+   <!-- Flight Summary -->
+   <div class="flight-summary" *ngIf="selectedFlight as flight">
+    <h3>Selected Flight</h3>
+    <p><strong>{{ flight.airline }}</strong> ({{ flight.flightNumber }})</p>
+    <p>Departure: {{ flight.departureTime }}</p>
+    <p>Duration: {{ flight.duration }} mins</p>
+    <p>Price: ₹{{ flight.price }}</p>
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+
+    <!-- Full Name -->
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" formControlName="fullName" />
+      <small class="error"
+             *ngIf="form.get('fullName')?.touched && form.get('fullName')?.invalid">
+        Full Name is required
+      </small>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" formControlName="email" />
+      <small class="error"
+             *ngIf="form.get('email')?.touched && form.get('email')?.errors?.['required']">
+        Email is required
+      </small>
+      <small class="error"
+             *ngIf="form.get('email')?.touched && form.get('email')?.errors?.['email']">
+        Invalid email format
+      </small>
+    </div>
+
+    <!-- Contact Number -->
+    <div class="form-group">
+      <label>Contact Number</label>
+      <input type="text" formControlName="contact" />
+       <!-- Invalid format -->
+  <small class="error"
+  *ngIf="form.get('contact')?.touched &&
+         form.get('contact')?.errors?.['pattern']">
+Contact number must be exactly 10 digits
+</small>
+    </div>
+
+    <!-- Number of Passengers -->
+    <div class="form-group">
+      <label>No. of Passengers</label>
+      <input type="number" formControlName="passengers" min="1" />
+      <small class="error"
+             *ngIf="form.get('passengers')?.touched && form.get('passengers')?.errors?.['required']">
+        Passenger count is required
+      </small>
+      <small class="error"
+             *ngIf="form.get('passengers')?.touched && form.get('passengers')?.errors?.['min']">
+        Minimum 1 passenger required
+      </small>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit"
+            [disabled]="form.invalid"
+            class="submit-btn">
+      Confirm Booking
+    </button>
+
+  </form>
+
+</div>

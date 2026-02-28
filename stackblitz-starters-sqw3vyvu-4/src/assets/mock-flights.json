@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "airline": "Indigo",
+    "flightNumber": "6E-234",
+    "source": "Chennai",
+    "destination": "Delhi",
+    "departureTime": "08:00",
+    "duration": 165,
+    "price": 4500
+  },
+  {
+    "id": 2,
+    "airline": "Air India",
+    "flightNumber": "AI-101",
+    "source": "Chennai",
+    "destination": "Delhi",
+    "departureTime": "14:00",
+    "duration": 190,
+    "price": 5200
+  },
+  {
+    "id": 3,
+    "airline": "SpiceJet",
+    "flightNumber": "SG-450",
+    "source": "Chennai",
+    "destination": "Mumbai",
+    "departureTime": "18:00",
+    "duration": 120,
+    "price": 3800
+  },
+    {
+      "id": 4,
+      "airline": "SkyHigh",
+      "flightNumber": "SH101",
+      "source": "Chennai",
+      "destination": "Mumbai",
+      "departureTime": "10:30",
+      "price": 4500,
+      "duration": 120
+    },
+    {
+      "id": 5,
+      "airline": "CloudAir",
+      "flightNumber": "CA202",
+      "source": "Chennai",
+      "destination": "Delhi",
+      "departureTime": "14:00",
+      "price": 6200,
+      "duration": 150
+    }
+  
+]
