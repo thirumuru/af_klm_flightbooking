@@ -1,4 +1,4 @@
-# ✈️ AF_KLM_Flight Booking Portal
+ AF_KLM_Flight Booking Portal
 
 A simplified Flight Search and Booking Web Application developed using **Angular 19 (Standalone Components)**.
 
@@ -10,7 +10,7 @@ This application allows users to:
 
 ---
 
-## 🚀 Live Development
+ Live Development
 
 Developed using **StackBlitz**  
 https://stackblitz.com/edit/stackblitz-starters-sqw3vyvu?file=src%2FREADME.MD
@@ -21,7 +21,7 @@ https://github.com/thirumuru
 
 ---
 
-## 🛠 Tech Stack
+ Tech Stack
 
 - Angular 19
 - Standalone Components
@@ -34,16 +34,16 @@ https://github.com/thirumuru
 
 ---
 
-## 📌 Features
+Features
 
-### 1️⃣ Flight Search Page
+Flight Search Page
 - Source
 - Destination
 - Departure Date
 - Blue Search Button
 - Form validation
 
-### 2️⃣ Search Results Page
+Search Results Page
 - Displays:
   - Airline
   - Flight Number
@@ -60,7 +60,7 @@ https://github.com/thirumuru
   - FlightCardComponent
   - FilterSidebarComponent
 
-### 3️⃣ Booking Page
+Booking Page
 - Passenger Details Form
   - Full Name
   - Email
@@ -69,7 +69,7 @@ https://github.com/thirumuru
 - Inline validation messages
 - Form validation using Reactive Forms
 
-### 4️⃣ Confirmation Page
+Confirmation Page
 - Displays:
   - Selected Flight Details
   - Passenger Information
