@@ -19,6 +19,7 @@ Source Code available on GitHub.
 GitHub Repository:
 https://github.com/thirumuru
 
+git clone https://github.com/thirumuru/AF_KLM_Flight_Booking_Portal.git
 ---
 
  Tech Stack
@@ -74,5 +75,11 @@ Confirmation Page
   - Selected Flight Details
   - Passenger Information
   - Generated Booking Reference ID
+
+Route Protection
+
+Route Guard implemented to:
+- Prevent access to booking page without selecting a flight
+- Protect confirmation page from direct navigation
 
 ---
